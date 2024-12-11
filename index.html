@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./js_scr_bostrap_css_frame/normalize.css">
+    <link rel="stylesheet" href="./js_scr_bostrap_css_frame/bootstrap.min.css">
+    <script src="./js_scr_bostrap_css_frame/bootstrap.bundle.min.js"></script>
+    <script src="./js_scr_bostrap_css_frame/jquery.js"></script>
+    <title>理周飆股日報 內容介紹</title>
+    <style>
+        /* Reset and basic styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 15px;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0 0 15px;
+            color: #666;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fa8383;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-section img {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .image-section img {
+                flex: 1 1 100%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .button {
+                font-size: 14px;
+            }
+        }
+        .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+        border-radius: 50%; /* 圓形按鈕 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white; /* 圖標顏色 */
+    }
+    .carousel-inner {
+        display: flex; /* 確保子元素不被壓縮 */
+        align-items: center; /* 垂直居中 */
+    }
+
+    .carousel-inner img {
+        transform: scale(0.8); /* 縮小圖片比例 */
+        transform-origin: center center; /* 縮放基點設為圖片中心 */
+        max-height: calc(100vh * 0.8); /* 控制圖片最大高度，不超出視窗 */
+    }
+
+    /* 可選：縮小時也調整父容器的高度 */
+    .carousel {
+        height: auto; /* 動態高度，根據內容調整 */
+        padding: 20px 0; /* 添加適量的上下內距 */
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+        background-color: rgba(0, 0, 0, 0.7); /* 懸停時更深色 */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 60px; /* 增加按鈕可點擊區域 */
+    }
+    
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #fa8383;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="section">
+            <h1>理周飆股日報 內容特色</h1>
+            <div class="image-section">
+
+                <img src="images/2_0.png" alt="理周飆股日報展示 2">
+            </div>
+        </div>
+            <!-- Carousel Section -->
+<div id="footerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/績效1206.jpg" class="d-block w-100" alt="第1張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/績效1205.jpg" class="d-block w-100" alt="第2張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/績效1204.jpg" class="d-block w-100" alt="第3張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/績效 1202.jpg" class="d-block w-100" alt="第4張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/1_0.png" class="d-block w-100" alt="第5張圖片">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#footerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#footerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+        
+
+        <!-- About Dr. Rich Section -->
+        <div class="section">
+            <h1>許江鎮博士 簡介</h1>
+            <p>許江鎮博士（Dr. Rich）是台灣少數具備國際投資分析師 (CIIA) 證書資格的資深投資管理專家，並擁有證券投資分析師 (CSIA) 與大數據分析師 (BDA) 的專業證照。</p>
+            <a href="https://www.moneyweekly.com.tw/Files/Daily/202411261450_522835.pdf" class="button"
+                target="_blank">點我試閱 11/26理周飆股日報</a>
+
+        </div>
+
+        <!-- Join LINE Section -->
+        <div class="section">
+            <h1>加入理周寶 理周官方LINE 發送訊息數字6 獲得理周飆股日報</h1>
+
+
+            <a href="https://lin.ee/T1S9589" class="button" target="_blank">點我加入 理周寶 理周官方LINE</a>
+        </div>
+
+        <!-- Purchase Process Section -->
+        <div class="section">
+            <h1>理周飆股日報購買</h1>
+
+            <a href="https://www.moneyweekly.com.tw/Store/List/%E4%B8%80%E8%88%AC%E5%95%86%E5%93%81/12095"
+                class="button" target="_blank">點我購買 理周飆股日報</a>
+        </div>
+
+        <!-- Video Playlist Section -->
+        <div class="section">
+            <h1>理周飆股日報 影片清單</h1>
+            <p>觀看我們的影片清單，深入了解理周飆股日報的特色及使用方法。</p>
+        
+            <!-- Embed YouTube video playlist -->
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
+                <iframe 
+                    src="https://www.youtube.com/embed/videoseries?list=PLNbM9bDZr7vJuMxpXF5Hr4-b916wug6av" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+            </div>
+        </div>
+        <p style="text-align: center;">
+            <a href="https://www.youtube.com/playlist?list=PLNbM9bDZr7vJuMxpXF5Hr4-b916wug6av" class="button" target="_blank">點我觀看影片清單</a>
+        </p>
+
+        
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>點擊以下連結了解更多資訊：</p>
+            <p>
+                <a href="https://lin.ee/T1S9589">理周寶 官方LINE</a> | <a
+                    href="https://www.moneyweekly.com.tw/Store/Index">理財周刊官方網站</a><br>
+                客服洽詢專線：02-7725-1393
+            </p>
+            <p>Copyright &copy; 2024 Moneyweekly Publishing Ltd. All Rights Reserved.</p>
+        </div>
+     
+
+    </div>
+
+</body>
+
+</html>
