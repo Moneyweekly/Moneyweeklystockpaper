@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./js_scr_bostrap_css_frame/normalize.css">
+    <link rel="stylesheet" href="./js_scr_bostrap_css_frame/bootstrap.min.css">
+    <script src="./js_scr_bostrap_css_frame/bootstrap.bundle.min.js"></script>
+    <script src="./js_scr_bostrap_css_frame/jquery.js"></script>
     <title>理周飆股日報 內容介紹</title>
     <style>
         /* Reset and basic styling */
@@ -87,7 +91,44 @@
                 font-size: 14px;
             }
         }
+        .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+        border-radius: 50%; /* 圓形按鈕 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white; /* 圖標顏色 */
+    }
+    .carousel-inner {
+        display: flex; /* 確保子元素不被壓縮 */
+        align-items: center; /* 垂直居中 */
+    }
 
+    .carousel-inner img {
+        transform: scale(0.8); /* 縮小圖片比例 */
+        transform-origin: center center; /* 縮放基點設為圖片中心 */
+        max-height: calc(100vh * 0.8); /* 控制圖片最大高度，不超出視窗 */
+    }
+
+    /* 可選：縮小時也調整父容器的高度 */
+    .carousel {
+        height: auto; /* 動態高度，根據內容調整 */
+        padding: 20px 0; /* 添加適量的上下內距 */
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+        background-color: rgba(0, 0, 0, 0.7); /* 懸停時更深色 */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 60px; /* 增加按鈕可點擊區域 */
+    }
+    
         .footer {
             text-align: center;
             font-size: 14px;
@@ -114,6 +155,36 @@
                 <img src="images/2_0.png" alt="理周飆股日報展示 2">
             </div>
         </div>
+            <!-- Carousel Section -->
+<div id="footerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/績效1206.jpg" class="d-block w-100" alt="第1張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/績效1205.jpg" class="d-block w-100" alt="第2張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/績效1204.jpg" class="d-block w-100" alt="第3張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/績效 1202.jpg" class="d-block w-100" alt="第4張圖片">
+        </div>
+        <div class="carousel-item">
+            <img src="images/1_0.png" class="d-block w-100" alt="第5張圖片">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#footerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#footerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+        
 
         <!-- About Dr. Rich Section -->
         <div class="section">
@@ -126,7 +197,7 @@
 
         <!-- Join LINE Section -->
         <div class="section">
-            <h1>加入理周寶 理周官方LINE 發送訊息拿好康</h1>
+            <h1>加入理周寶 理周官方LINE 發送訊息數字6 獲得理周飆股日報</h1>
 
 
             <a href="https://lin.ee/T1S9589" class="button" target="_blank">點我加入 理周寶 理周官方LINE</a>
@@ -160,6 +231,8 @@
             <a href="https://www.youtube.com/playlist?list=PLNbM9bDZr7vJuMxpXF5Hr4-b916wug6av" class="button" target="_blank">點我觀看影片清單</a>
         </p>
 
+        
+
         <!-- Footer -->
         <div class="footer">
             <p>點擊以下連結了解更多資訊：</p>
@@ -170,6 +243,7 @@
             </p>
             <p>Copyright &copy; 2024 Moneyweekly Publishing Ltd. All Rights Reserved.</p>
         </div>
+     
 
     </div>
 
